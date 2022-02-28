@@ -10,6 +10,7 @@ body{
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  background-color: rgb(214, 59, 199);
 }
 
 .slide {
@@ -22,16 +23,29 @@ body{
 
 #panelOne{
   background-color: blue;
+  z-index: 4;
 }
 
 #panelTwo{
   background-color: yellow;
+  z-index: 3;
 }
 
 #panelThree{
   background-color: green;
+  z-index: 2;
 }
 
 #panelFour{
-  background-color: black;
+  background-color: transparent;
+}
+
+.fixed{
+  background-color: rgb(214, 59, 199);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
 }
