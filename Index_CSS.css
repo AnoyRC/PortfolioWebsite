@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+}
+.Parent {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1920px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.slide {
+  display: flex;
+  align-items: flex-end;
+  flex: 1 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+#panelOne{
+  background-color: blue;
+}
+
+#panelTwo{
+  background-color: yellow;
+}
+
+#panelThree{
+  background-color: green;
+}
+
+#panelFour{
+  background-color: black;
+}
