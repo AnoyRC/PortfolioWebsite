@@ -1,6 +1,25 @@
 body{
 	margin: 0;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
 @font-face {
     font-family: 'SilkSerif_Regular';
     src: url('silk_serif_regular-webfont.woff2') format('woff2'),
@@ -113,7 +132,8 @@ body{
 
 .col-2 img{
 	background-color: #F3AB09;
-	margin-top:-30vh;
+	margin-top:-37.5vh;
+	height: 1080px;
 }
 
 #panelTwo{
