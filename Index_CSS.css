@@ -28,6 +28,16 @@ body{
     font-style: normal;
 
 }
+
+
+@font-face {
+    font-family: 'SilkSerif_ExtraLight';
+    src: url('silk_serif_extralight-webfont.woff2') format('woff2'),
+         url('silk_serif_extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @font-face {
     font-family: 'SHAD_Regular';
     src: url('adgroteskext.-webfont.woff2') format('woff2'),
@@ -41,6 +51,7 @@ body{
   width: 100%;
   max-width: 1920px;
 }
+
 .container{
   display: flex;
   justify-content: space-between;
@@ -76,17 +87,17 @@ body{
 .col-1 h1{
 	color: white;
 	font-family: SilkSerif_Regular;
-	font-size: 150.3px;
+	font-size: 200.3px;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: -7vh;
 	font-weight: 100;
 	margin-left: 25px;
 }
 
 .col-1 img{
 	margin-left: 35px;
-	height: 65px;
-	margin-top: 72px;
+	height: 100px;
+	margin-top: 87px;
 	margin-left: 25px;
 
 }
@@ -95,7 +106,7 @@ body{
 	color: white;
 	font-family: SilkSerif_Regular;
 	font-size: 60px;
-	margin-top: -1vh;
+	margin-top: 4vh;
 	margin-bottom: 0;
 	font-weight: 100;
 	flex-basis:75%;
@@ -109,11 +120,12 @@ body{
 	width: 100%;
 	height: 1.4px;
 	margin-left: -1.5vw;
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .col-1 h3{
 	color: white;
+	font-family: SHAD_Regular;
 	font-size: 100px;
 	margin-top: 20px;
 	margin-left: 25px;
@@ -137,9 +149,93 @@ body{
 }
 
 #panelTwo{
-  background-color: #F3AB09;
+  background-color: #0D0E13;
   z-index: 3;
 
+}
+
+.flexBox-2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.col-3{
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	background-color: #F3AB09;
+	height: 100vh;
+	flex-basis: 80%;
+	border-radius: 0 40px 40px 0;
+}
+
+.list{
+	margin-top:50px;
+	margin-left: 300px;
+}
+
+#Data{
+  margin-bottom: 10px;
+}
+
+#Data img{
+   height : 10vh;
+	 margin-left: -10vw;
+	 margin-top: 20px;
+}
+
+#Data h1{
+	font-family: SilkSerif_Regular;
+	display:block;
+	font-weight: 100;
+	font-size : 80px;
+	margin-top: -99px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	flex-basis: 50%;
+}
+
+#Data h2{
+	font-family: SilkSerif_ExtraLight;
+	font-weight: 100;
+	font-size : 50px;
+	margin-top: -3.5vh;
+	margin-bottom: 0;
+	line-height: 60px;
+}
+
+#Data section{
+	height:1.4px;
+	background-color: black;
+	margin-top:20px;
+	width:150%;
+}
+
+#Page-Info h1{
+	font-family: SilkSerif_Regular;
+	font-size: 275px;
+	margin-top: -2vw;
+	margin-left: -10vw;
+	display: inline-block;
+}
+
+#Page-Info img{
+	margin-top:150px;
+	height: 14vh;
+}
+
+.col-4{
+	position: relative;
+	flex-wrap: wrap;
+	height: 100vh;
+	flex-basis: 10%;
+}
+
+.col-4 img{
+	height: 900px;
+	margin-top: 33px;
+	margin-left: -33.5vw;
 }
 
 #panelThree{
