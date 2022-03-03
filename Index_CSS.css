@@ -239,8 +239,85 @@ body{
 }
 
 #panelThree{
-  background-color: green;
+  background-color: #0D0E13;
   z-index: 2;
+}
+
+.flexBox-3{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.col-5{
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	height: 100vh;
+	flex-basis: 80%;
+}
+.col-5 h1{
+ font-family: SilkSerif_Regular;
+ font-weight: 100;
+ color: White;
+ font-size: 343.6px;
+ margin-top: -7vh;
+ margin-bottom: 0px;
+ z-index: 7;
+}
+
+#arrow{
+	margin-top: 95px;
+	margin-left: 20px;
+	height: 15vh;
+  flex-basis: 10%;
+}
+
+#FirstImage{
+	position: relative;
+
+	z-index: 8;
+	margin-top: -27vh;
+	margin-left: 335px;
+	height:25vh;
+	margin-bottom: 0;
+  width: 25vw;
+}
+
+#PicPin{
+	position: relative;
+	z-index:6;
+	margin-top: -17vh;
+}
+
+#SecondImage{
+  position: relative;
+	z-index: 9;
+	margin-top: -25vh;
+	height:25vh;
+	margin-left: 3vw;
+}
+
+#ThirdImage{
+	position: relative;
+	z-index: 10;
+	margin-top: -25vh;
+	height:25vh;
+	margin-left: 9.4vw;
+}
+
+.col-6{
+	position: relative;
+	flex-wrap: wrap;
+	height: 100vh;
+	flex-basis: 10%;
+}
+
+#FourthImage{
+	position: relative;
+	margin-left: -8vw;
+	z-index:7;
+	height:100%;
 }
 
 #panelFour{
@@ -248,7 +325,7 @@ body{
 }
 
 .fixed{
-  background-color: rgb(214, 59, 199);
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
