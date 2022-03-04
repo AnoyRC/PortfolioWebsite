@@ -241,12 +241,14 @@ body{
 #panelThree{
   background-color: #0D0E13;
   z-index: 2;
+	border-radius: 0 400px 400px 0;
 }
 
 .flexBox-3{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: 3;
 }
 
 .col-5{
@@ -311,6 +313,7 @@ body{
 	flex-wrap: wrap;
 	height: 100vh;
 	flex-basis: 10%;
+	border-radius: 30%;
 }
 
 #FourthImage{
@@ -322,14 +325,80 @@ body{
 
 #panelFour{
   background-color: transparent;
+	z-index: 0;
 }
 
 .fixed{
-  background-color: white;
+  background-image: url(Images/Page4Design3.png);
+	background-size: 100% 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
+}
+
+.MainBox{
+
+}
+
+.MainBox h1{
+	position: relative;
+	font-family: SilkSerif_Regular;
+	font-weight: 100;
+	font-size: 150px;
+	line-height: 140px;
+	text-align: center;
+	margin-top: -5vh;
+	margin-bottom: 0;
+	z-index: 4;
+
+}
+
+#Design1{
+   position: relative;
+	 z-index: 1;
+	 width:7vw;
+	 margin-left: 20vw;
+	 margin-top: 70px;
+}
+
+#Profile{
+  display: block;
+	position: relative;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: -10vh;
+  width: 15%;
+	bottom: 0;
+	z-index: 2;
+}
+
+#Design2{
+  position: relative;
+	z-index: 3;
+	width:3vw;
+	margin-left: 80vw;
+	margin-top: -10vh;
+}
+
+.Logo{
+	margin-top: 70px;
+	height:5vh;
+	position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Logo1{
+   margin-left: 36vw;
+}
+
+#Logo2{
+	 margin-left: 10vw;
+}
+
+#Logo3{
+	margin-left: 10vw;
 }

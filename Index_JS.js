@@ -10,7 +10,7 @@ gsap.to(sections, {
       scrollTrigger: {
         pin:".Parent",
         scrub: true,
-        snap:snapVal,
+        //snap:snapVal,
         start: 'top top',
         end: '+=' + document.querySelector('.container').scrollWidth
       },
