@@ -10,6 +10,9 @@ var Arrow3 = document.getElementById('arrow');
 var Text_Works = document.querySelector('.col-5 h1');
 var Section3 = document.getElementById('panelThree');
 var Section4 = document.getElementById('panelFour');
+var Ele1 = document.querySelector('.d1');
+var Ele2 = document.querySelector('.d2');
+var Ele3 = document.querySelector('.d3');
 
 gsap.to(sections, {
       xPercent: -100 * numSections,
@@ -77,3 +80,36 @@ let t6 = gsap.timeline({
 });
 t6.from(Text_Works,{ duration: 2, opacity : 1 });
 t6.to(Text_Works,{duration: 2 , opacity : 0 });
+
+let t7 = gsap.timeline({
+  scrollTrigger:{
+    trigger : Ele1,
+    start :'+=' + 0.5*document.querySelector('.flexBox-3').scrollWidth,
+    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
+    scrub:true
+  },
+});
+t7.from(Ele1,{ duration: 2, x: +600  });
+t7.to(Ele1,{duration: 2 , x: -600 });
+
+let t8 = gsap.timeline({
+  scrollTrigger:{
+    trigger : Ele2,
+    start :'+=' + -1,//*document.querySelector('.flexBox-3').scrollWidth,
+    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
+    scrub:true
+  },
+});
+t8.from(Ele2,{ duration: 2, x: +600  });
+t8.to(Ele2,{duration: 2 , x: 0 });
+
+let t9 = gsap.timeline({
+  scrollTrigger:{
+    trigger : Ele3,
+    start :'+=' + 600,//*document.querySelector('.flexBox-3').scrollWidth,
+    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
+    scrub:true
+  },
+});
+t9.from(Ele3,{ duration: 2, x: +600  });
+t9.to(Ele3,{duration: 2 , x: -100 });
