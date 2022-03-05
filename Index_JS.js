@@ -13,6 +13,7 @@ var Section4 = document.getElementById('panelFour');
 var Ele1 = document.querySelector('.d1');
 var Ele2 = document.querySelector('.d2');
 var Ele3 = document.querySelector('.d3');
+var Text_Process = document.querySelector("#Page-Info h1");
 
 gsap.to(sections, {
       xPercent: -100 * numSections,
@@ -73,8 +74,8 @@ let t6 = gsap.timeline({
     scrollTrigger: {
       trigger : Text_Works,
       //toggleActions : "play restart resume reset",
-      start :'+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
-      end: '+=' + 2.5*document.querySelector('.flexBox-3').scrollWidth,
+      start :'+=' + 1.4*document.querySelector('.flexBox-3').scrollWidth,
+      end: '+=' + 2.4*document.querySelector('.flexBox-3').scrollWidth,
       scrub:true
   },
 });
@@ -82,34 +83,66 @@ t6.from(Text_Works,{ duration: 2, opacity : 1 });
 t6.to(Text_Works,{duration: 2 , opacity : 0 });
 
 let t7 = gsap.timeline({
+  ease:1,
   scrollTrigger:{
     trigger : Ele1,
-    start :'+=' + 0.5*document.querySelector('.flexBox-3').scrollWidth,
-    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
-    scrub:true
+    start :'+=' + 0*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.5*document.querySelector('.Parent').scrollWidth,
+    scrub:1.5
   },
 });
 t7.from(Ele1,{ duration: 2, x: +600  });
+t7.to(Ele1,{duration: 2 , x: 0 });
 t7.to(Ele1,{duration: 2 , x: -600 });
 
 let t8 = gsap.timeline({
+  ease:4,
   scrollTrigger:{
     trigger : Ele2,
-    start :'+=' + -1,//*document.querySelector('.flexBox-3').scrollWidth,
-    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
-    scrub:true
+    start :'+=' + 0*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.5*document.querySelector('.Parent').scrollWidth,
+    scrub:1.5
   },
 });
-t8.from(Ele2,{ duration: 2, x: +600  });
+t8.from(Ele2,{ duration: 2, x: +1000   });
 t8.to(Ele2,{duration: 2 , x: 0 });
+t8.to(Ele2,{duration: 2 , x: -1000 });
 
 let t9 = gsap.timeline({
+  ease:1,
   scrollTrigger:{
     trigger : Ele3,
-    start :'+=' + 600,//*document.querySelector('.flexBox-3').scrollWidth,
-    end: '+=' + 1.5*document.querySelector('.flexBox-3').scrollWidth,
-    scrub:true
+    start :'+=' + 0*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.5*document.querySelector('.Parent').scrollWidth,
+    scrub:1.5
   },
 });
-t9.from(Ele3,{ duration: 2, x: +600  });
-t9.to(Ele3,{duration: 2 , x: -100 });
+t9.from(Ele3,{ duration: 2, x: +1400  });
+t9.to(Ele3,{duration: 2 , x: 0  });
+t9.to(Ele3,{duration: 2 , x: -1400  });
+
+
+
+let t10 = gsap.timeline({
+    scrollTrigger: {
+      trigger : Text_Process,
+      //toggleActions : "play restart resume reset",
+      start :'+=' + 0*document.querySelector('.flexBox-3').scrollWidth,
+      end: '+=' + 1*document.querySelector('.flexBox-3').scrollWidth,
+      scrub:true
+  },
+});
+t10.from(Text_Process,{ duration: 2, y: +500  });
+t10.to(Text_Process,{duration: 2 , y: 0 });
+
+let t11 = gsap.timeline({
+    scrollTrigger: {
+      trigger : Text_Process,
+      //toggleActions : "play restart resume reset",
+      start :'+=' + 0.1*document.querySelector('.flexBox-3').scrollWidth,
+      end: '+=' + 1.1*document.querySelector('.flexBox-3').scrollWidth,
+      scrub:true
+  },
+});
+t11.from(Text_Process,{ duration: 2, opacity : 1 });
+t11.to(Text_Process,{duration: 2 , opacity : 0 });
