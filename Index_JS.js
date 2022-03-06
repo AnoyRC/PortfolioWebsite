@@ -14,6 +14,7 @@ var Ele1 = document.querySelector('.d1');
 var Ele2 = document.querySelector('.d2');
 var Ele3 = document.querySelector('.d3');
 var Text_Process = document.querySelector("#Page-Info h1");
+var Heading = document.querySelector(".col-1 h1");
 
 gsap.to(sections, {
       xPercent: -100 * numSections,
@@ -146,3 +147,15 @@ let t11 = gsap.timeline({
 });
 t11.from(Text_Process,{ duration: 2, opacity : 1 });
 t11.to(Text_Process,{duration: 2 , opacity : 0 });
+
+let t12 = gsap.timeline({
+  scrollTrigger : {
+    trigger : Heading,
+    start :'+=' + 0*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.2*document.querySelector('.Parent').scrollWidth,
+    markers : true,
+    toggleActions : "play reset play none",
+  }
+});
+t12.from(Heading,{duration : 1 , y : -500 });
+t12.to(Heading,{duration : 1 , y :0 });
