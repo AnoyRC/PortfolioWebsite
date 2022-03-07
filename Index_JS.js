@@ -169,3 +169,37 @@ t13.to(".isActive2",{opacity:0, duration: 1});
 t13.from(".isActive3", {y:500, duration: 1});
 t13.to(".isActive3", {y:0, duration: 1});
 t13.to(".isActive3",{opacity:0, duration: 1});
+
+let t14 = gsap.timeline({
+  scrollTrigger : {
+    trigger : ".col-1 h2",
+    start :'+=' + -0.1*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.2*document.querySelector('.Parent').scrollWidth,
+    toggleActions : "play reset play none",
+  }
+});
+t14.from(".col-1 h2",{duration : 1 , x : -500 });
+t14.to(".col-1 h2",{duration : 1 , x :0 });
+
+let t15 = gsap.timeline({
+  scrollTrigger : {
+    trigger : ".col-1 h3",
+    start :'+=' + -0.1*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.2*document.querySelector('.Parent').scrollWidth,
+    toggleActions : "play reset play none",
+  }
+});
+t15.from(".col-1 h3",{duration : 1 , x : -500 });
+t15.to(".col-1 h3",{duration : 1 , x :0 });
+
+let t16 = gsap.timeline({
+  scrollTrigger : {
+    trigger : ".col-1 h2",
+    start :'+=' + -0.1*document.querySelector('.Parent').scrollWidth,
+    end: '+=' + 0.397*document.querySelector('.Parent').scrollWidth,
+    toggleActions : "play reset play none",
+    markers: true
+  }
+});
+t16.from(".col-2 img",{duration : 1 , opacity : 0});
+t16.to(".col-2 img",{duration : 10 , opacity : 1 });
