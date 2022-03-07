@@ -161,16 +161,11 @@ t12.to(Heading,{duration : 1 , y :0 });
 
 var t13 = gsap.timeline({repeat: -1, repeatDelay: 1});
 t13.from(".isActive1", {y:500, duration: 1});
-t13.to(".isActive1", {opacity:1, duration: 1});
-t13.from(".isActive2", {y:500, duration: 1});
-t13.to(".isActive2", {opacity:1, duration: 1});
-t13.from(".isActive3", {y:500, duration: 1});
-t13.to(".isActive3", {opacity:1, duration: 1});
-t13.to(".isActive1", {opacity:0, duration: 0.1});
-t13.to(".isActive2", {opacity:0, duration: 0.1});
-t13.to(".isActive3", {opacity:0, duration: 0.1});
 t13.to(".isActive1", {y:0, duration: 1});
-
+t13.to(".isActive1",{opacity:0, duration: 1});
+t13.from(".isActive2", {y:500, duration: 1});
 t13.to(".isActive2", {y:0, duration: 1});
-
+t13.to(".isActive2",{opacity:0, duration: 1});
+t13.from(".isActive3", {y:500, duration: 1});
 t13.to(".isActive3", {y:0, duration: 1});
+t13.to(".isActive3",{opacity:0, duration: 1});

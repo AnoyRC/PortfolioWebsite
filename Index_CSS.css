@@ -135,11 +135,11 @@ body{
 .isActive1{
 	position: relative;
 	color: white;
-	font-size: 200px;
+	font-size: 190px;
 	font-family: SilkSerif_Regular;
 	font-weight: 100;
 	flex-basis: 70%;
-	margin-top: -2vh;
+	margin-top: -2.9vh;
 	margin-left: 25px;
 	z-index: 3;
 }
@@ -147,11 +147,11 @@ body{
 .isActive2{
 	position: relative;
 	color: white;
-	font-size: 200px;
+	font-size: 190px;
 	font-family: SilkSerif_Regular;
 	font-weight: 100;
 	flex-basis: 70%;
-	margin-top: -60vh;
+	margin-top: -57vh;
 	margin-left: 25px;
 	z-index: 4;
 }
@@ -159,11 +159,11 @@ body{
 .isActive3{
 	position: relative;
 	color: white;
-	font-size: 200px;
+	font-size: 190px;
 	font-family: SilkSerif_Regular;
 	font-weight: 100;
 	flex-basis: 70%;
-	margin-top: -60vh;
+	margin-top: -57vh;
 	margin-left: 25px;
 	z-index: 5;
 }
