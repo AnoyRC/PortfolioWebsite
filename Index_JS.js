@@ -201,5 +201,5 @@ let t16 = gsap.timeline({
     markers: true
   }
 });
-t16.from(".col-2 img",{duration : 1 , opacity : 0});
+t16.from(".col-2 img",{duration : 3 , opacity : 0});
 t16.to(".col-2 img",{duration : 10 , opacity : 1 });
