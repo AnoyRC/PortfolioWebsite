@@ -198,7 +198,6 @@ let t16 = gsap.timeline({
     start :'+=' + -0.1*document.querySelector('.Parent').scrollWidth,
     end: '+=' + 0.397*document.querySelector('.Parent').scrollWidth,
     toggleActions : "play reset play none",
-    markers: true
   }
 });
 t16.from(".col-2 img",{duration : 3 , opacity : 0});
